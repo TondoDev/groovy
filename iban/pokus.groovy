@@ -12,7 +12,7 @@ def str = "ABCD".collectReplacements{
   println "${it} ${repl}"
   repl
 }
-
+println "pokus"
 println str
 def suma = (1G..1000000G).sum()
 println "suma: " + suma
