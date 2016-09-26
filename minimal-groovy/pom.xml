@@ -29,6 +29,9 @@
         </executions>
       </plugin>
       <plugin>
+        <!-- Latest compiler plugin (26.9.2016). When omitted, version 3.1 is used,
+        but no differences found in compiled classes.
+        -->
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.5.1</version>
