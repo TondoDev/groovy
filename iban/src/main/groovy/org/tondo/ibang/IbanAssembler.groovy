@@ -1,6 +1,6 @@
 package org.tondo.ibang
 
-class IbanGenerator {
+class IbanAssembler {
 
   String generate() {
     // get country specific length
@@ -8,10 +8,10 @@ class IbanGenerator {
     String country = "SK"
     String bban = "73000000009000040409"
 
-    return generate(country, bban)
+    return assemble(country, bban)
   }
 
-  String generate(String country, String bban) {
+  String assemble(String country, String bban) {
     int checksum = calculateChecksum(country, bban)
     // checksum must have two digits
     return country + (checksum < 10 ? "0" + checksum : checksum) + bban

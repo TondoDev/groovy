@@ -1,16 +1,16 @@
 package org.tondo.iban
 
-import org.tondo.ibang.IbanGenerator
+import org.tondo.ibang.IbanAssembler
 import spock.lang.*
 
 
-class IbanGeneratorTest extends Specification {
+class IbanAssemblerTest extends Specification {
 
-  IbanGenerator generator = new IbanGenerator()
+  IbanAssembler iban = new IbanAssembler()
 
   def "test generate iban from contry code and BBAN"() {
     expect :
-      result == generator.generate(code, bban)
+      result == iban.assemble(code, bban)
     where :
       code <<   ["SK",                        "CZ",                         "DE"]
       bban <<   ["73000000009000040409",      "00000000000002667001",       "500105170648489890"]

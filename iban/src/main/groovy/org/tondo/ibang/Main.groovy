@@ -8,6 +8,6 @@ class Main {
   //  println args[0]
   //  new IbanValidator().validate(args[0])
 
-  println new IbanGenerator().generate()
+  println new IbanAssembler().generate()
   }
 }
