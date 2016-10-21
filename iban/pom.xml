@@ -90,5 +90,10 @@
       <version>1.0-groovy-2.4</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>com.github.mifmif</groupId>
+      <artifactId>generex</artifactId>
+      <version>1.0.1</version>
+    </dependency>
   </dependencies>
 </project>
