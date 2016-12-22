@@ -1,3 +1,5 @@
+package org.tondo.ibang
+
 class IbanCountryFormatRegister {
 
   private Map register = [:]
